@@ -1,0 +1,83 @@
+/* Fonts */
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/") format("woff2"),
+  url("../../fonts/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/Roboto-Medium.woff2") format("woff2"),
+  url("../../fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/Roboto-Regular.woff2") format("woff2"),
+  url("../../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* /Fonts */
+
+/* General styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+/* /General styles */
+
+/* Body styles */
+body {
+  font-family: "Roboto", sans-serif;
+}
+/* /Body styles */
+
+/* Container styles */
+.container {
+  max-width: $desktop;
+  margin: 0 auto;
+
+  @media (max-width: $tablet-l) {
+    max-width: $tablet-l;
+    padding: 0 40px;
+  }
+
+  @media (max-width: $tablet) {
+    max-width: $tablet;
+    padding: 0 20px;
+  }
+
+  @media (max-width: $mobile) {
+    max-width: $mobile;
+    padding: 0 10px;
+  }
+}
+/* /Container styles */
+
+/* Visually hidden */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* /Visually hidden */

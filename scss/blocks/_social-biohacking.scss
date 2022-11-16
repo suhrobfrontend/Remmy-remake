@@ -1,0 +1,132 @@
+.social-biohacking {
+  margin-top: 400px;
+
+  @media (max-width: $tablet-l) {
+    margin-top: 300px;
+  }
+
+  @media (max-width: $tablet) {
+    margin-top: 250px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-top: 200px;
+  }
+
+  &-content {
+    width: 60%;
+    margin: 0 auto;
+
+    @media (max-width: $tablet-l) {
+      width: 70%;
+    }
+  }
+  
+  &__title {
+    font: 40px "Roboto";
+    font-weight: 400;
+    line-height: 47px;
+    text-align: center;
+
+    @media (max-width: $tablet-l) {
+      font-size: 32px;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 26px;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 22px;
+    }
+  }
+
+  .biohacking-manual {
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    &-content {
+      width: 40%;
+
+      @media (max-width: $tablet-l) {
+        width: 35%;
+      }
+
+      @media (max-width: $tablet) {
+        width: 40%;
+      }
+
+      @media (max-width: $mobile) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    &__number {
+      padding: 16px 22px;
+      display: inline-block;
+      background-color: $blue;
+      border-radius: 50%;
+      color: $white;
+      font: 20px "Roboto";
+      font-weight: 400;
+      box-shadow: 16px 16px 32px rgba(7, 19, 48, 0.08);
+      transition: 5s ease;
+    }
+
+    &__heading {
+      margin-top: 24px;
+      font: 20px "Roboto";
+      font-weight: 400;
+      line-height: 32px;
+
+      @media (max-width: $tablet-l) {
+        font-size: 19px;
+      }
+
+      @media (max-width: $tablet) {
+        font-size: 18px;
+      }
+    }
+
+    &__text {
+      font: 18px "Roboto";
+      font-weight: 400;
+      line-height: 32px;
+      color: $lighter-blue;
+      margin-top: 23px;
+
+      @media (max-width: $tablet-l) {
+        font-size: 17px;
+      }
+
+      @media (max-width: $tablet) {
+        font-size: 16px;
+      }
+    }
+
+    &-image {
+      width: 35%;
+
+      @media (max-width: $tablet-l) {
+        width: 40%;
+      }
+
+      @media (max-width: $tablet) {
+        width: 50%;
+      }
+    }
+
+    &__img {
+      width: 100%;
+    }
+  }
+}

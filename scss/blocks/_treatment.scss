@@ -1,0 +1,93 @@
+.treatment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 230px;
+
+  @media (max-width: $tablet-l) {
+    margin-top: 190px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-top: 110px;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &-image {
+    width: 25%;
+
+    @media (max-width: $tablet-l) {
+      width: 30%;
+    }
+
+    @media (max-width: $tablet) {
+      width: 40%;
+    }
+
+    @media (max-width: $mobile) {
+      width: 35%;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &-content {
+    width: 35%;
+
+    @media (max-width: $tablet-l) {
+      width: 45%;
+    }
+
+    @media (max-width: $tablet) {
+      width: 50%;
+    }
+
+    
+    @media (max-width: $mobile) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    font: 16px "Roboto";
+    font-weight: 400;
+    line-height: 20px;
+    color: $blue;
+  }
+
+  &__heading {
+    font: 40px "Roboto";
+    font-weight: 400;
+    line-height: 47px;
+    margin-top: 20px;
+
+    @media (max-width: $tablet-l) {
+      font-size: 35px;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 28px;
+    }
+  }
+
+  &__description {
+    font: 18px "Roboto";
+    font-weight: 400;
+    line-height: 32px;
+    color: $dark-blue;
+    margin-top: 32px;
+
+    
+    @media (max-width: $tablet-l) {
+      font-size: 17px;
+    }
+    
+    @media (max-width: $tablet) {
+      font-size: 16px;
+    }
+  }
+}

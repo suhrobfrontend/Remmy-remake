@@ -1,0 +1,11 @@
+// Common style files
+@import "./variables";
+@import "./mixins";
+@import "./blocks/common";
+
+// blocks
+@import "./blocks/header";
+@import "./blocks/hero";
+@import "./blocks/treatment";
+@import "./blocks/social-biohacking";
+@import "./blocks/recommendation";

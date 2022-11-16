@@ -1,0 +1,154 @@
+.main-header {
+  padding: 17px 0;
+  background-color: $white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  @media (max-width: $tablet) {
+    position: static;
+  }
+  .header-block {
+    position: relative;
+
+    #hamburger {
+      @media (max-width: $mobile) {
+        &:checked ~ .navigation .nav__list {
+          transform: translate(0);
+        }
+
+        &:checked + .hamburger #menu {
+          display: none;
+        }
+
+        &:checked + .hamburger #close {
+          display: block;
+        }
+      }
+    }
+
+    #menu,
+    #close {
+      display: none;
+      position: fixed;
+      z-index: 101;
+      font-size: 40px;
+      background-color: $white;
+      border-radius: 5px;
+    }
+
+    #menu {
+      @media (max-width: $mobile) {
+        display: block;
+      }
+    }
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+      align-self: center;
+
+      @media (max-width: $mobile) {
+        justify-content: center;
+      }
+
+      .logo {
+        @media (max-width: $mobile) {
+          position: relative;
+          z-index: 101;
+        }
+      }
+
+      .nav {
+        display: flex;
+        gap: 64px;
+        align-items: center;
+
+        &__list {
+          display: flex;
+          align-items: center;
+          gap: 44px;
+          margin-bottom: 0;
+
+          @media (max-width: $mobile) {
+            flex-direction: column;
+            gap: 13px;
+            position: fixed;
+            z-index: 100;
+            width: 50%;
+            left: 0;
+            top: 0;
+            transform: translate(-100%);
+            padding: 60px 0 0 20px;
+            height: 100vh;
+            align-items: flex-start;
+            background-color: $grey;
+            font-weight: 700;
+            transition: 0.3s ease;
+          }
+        }
+
+        &__link {
+          font: 15px "Roboto";
+          font-weight: 400;
+          line-height: 18px;
+          color: $dark-blue;
+          padding-bottom: 4px;
+
+          @media (max-width: $mobile) {
+            font-weight: 700;
+            font-size: 19px;
+            text-transform: uppercase;
+          }
+
+          &:hover {
+            border-bottom: 2px solid $dark-blue;
+          }
+
+          &:focus {
+            border-bottom: 2px solid $dark-blue;
+          }
+
+          &:active {
+            color: $lighter-blue;
+            border-bottom: 2px solid $dark-blue;
+          }
+        }
+      }
+
+      .header__link {
+        border-radius: 12px;
+        padding: 10px 20px;
+        border: none;
+        outline: none;
+        background-color: $blue;
+        color: $white;
+        font: 16px "Roboto";
+        font-weight: 400;
+        line-height: 20px;
+        transition: 0.3s ease;
+        display: inline-block;
+        outline: 2px dashed transparent;
+
+        @media (max-width: $mobile) {
+          display: none;
+        }
+
+        &:hover {
+          outline: 2px dashed transparent;
+          background-color: $hover-color;
+        }
+
+        &:focus {
+          outline: 2px dashed $blue;
+          outline-offset: 10px;
+        }
+
+        &:active {
+          outline: 2px dashed transparent;
+          background-color: $active-color;
+          outline: none;
+        }
+      }
+    }
+  }
+}
