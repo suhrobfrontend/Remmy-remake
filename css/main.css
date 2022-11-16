@@ -448,11 +448,11 @@ body {
 
 .with-before {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 @media (max-width: 576px) {
   .with-before {
+    justify-content: center;
     flex-direction: column;
   }
 }
