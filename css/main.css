@@ -351,6 +351,9 @@ body {
   align-items: center;
   margin-top: 230px;
 }
+.treatment--reverse {
+  flex-direction: row-reverse;
+}
 @media (max-width: 992px) {
   .treatment {
     margin-top: 190px;
@@ -441,6 +444,31 @@ body {
   .treatment__description {
     font-size: 16px;
   }
+}
+
+.with-before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 576px) {
+  .with-before {
+    flex-direction: column;
+  }
+}
+.with-before::before {
+  content: "";
+  background: url(../../img/book-icon.svg);
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+}
+.with-before:last-child:before {
+  content: "";
+  background: url(../../img/jug-icon.svg);
+  display: inline-block;
+  width: 48px;
+  height: 48px;
 }
 
 .social-biohacking {
