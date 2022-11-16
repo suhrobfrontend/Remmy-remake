@@ -449,6 +449,7 @@ body {
 .with-before {
   display: flex;
   align-items: center;
+  gap: 15px;
 }
 @media (max-width: 576px) {
   .with-before {
