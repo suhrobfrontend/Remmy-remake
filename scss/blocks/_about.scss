@@ -1,0 +1,193 @@
+.about {
+  margin-top: 200px;
+
+  &-content {
+    width: 50%;
+    margin: 0 auto;
+
+    @media (max-width: $tablet-l) {
+      margin: 170px auto 0;
+      width: 70%;
+    }
+  
+    @media (max-width: $tablet) {
+      margin-top: 150px auto 0;
+      width: 75%;
+    }
+  }
+
+  &__title {
+    font: 16px "Roboto";
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: $blue;
+
+    @media (max-width: $mobile) {
+      font-size: 15px;
+    }
+  }
+
+  &__heading {
+    font: 40px "Roboto";
+    font-weight: 400;
+    line-height: 47px;
+    text-align: center;
+    color: $dark-blue;
+    margin-top: 20px;
+
+    @media (max-width: $tablet-l) {
+      font-size: 36px;
+      line-height: 42px;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 32px;
+      line-height: 38px;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  }
+
+  &__description {
+    font: 12px "Roboto";
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+    margin-top: 30px;
+
+    @media (max-width: $tablet-l) {
+      line-height: 28px;
+    }
+
+    @media (max-width: $tablet) {
+      line-height: 24px;
+    }
+
+    @media (max-width: $mobile) {
+      line-height: 20px;
+    }
+  }
+
+  &-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 112px;
+    width: 100%;
+
+    
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    &-image {
+      width: 40%;
+
+      @media (max-width: $tablet-l) {
+        width: 50%;
+      }
+
+      @media (max-width: $tablet) {
+        width: 55%;
+      }
+
+      @media (max-width: $mobile) {
+        width: 90%;
+      }
+    }
+
+    &__img {
+      width: 100%;
+    }
+
+    &-content {
+      width: 40%;
+
+      @media (max-width: $tablet-l) {
+        width: 45%;
+      }
+
+      
+      @media (max-width: $mobile) {
+        width: 90%;
+        text-align: center;
+      }
+    }
+
+    &__heading {
+      font: 20px "Roboto";
+      font-weight: 400;
+      line-height: 32px;
+      color: $dark-blue;
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+
+      
+      @media (max-width: $tablet-l) {
+        font-size: 19px;
+        line-height: 30px;
+      }
+      
+      @media (max-width: $tablet) {
+        font-size: 17px;
+        line-height: 26px;
+      }
+      
+      @media (max-width: $mobile) {
+        font-size: 16px;
+        line-height: 22px;
+        align-items: center;
+      }
+
+      &::before {
+        content: "";
+        background: url(../../img/yoga-icon.svg);
+        width: 56px;
+        height: 56px;
+        display: inline-block;
+        background-size: contain;
+      }
+
+      &:last-child:before {
+        content: "";
+        background: url(../../img/heart-hand-icon.svg);
+        width: 56px;
+        height: 56px;
+        display: inline-block;
+        background-size: contain;
+      }
+    }
+
+    &__text {
+      font: 18px "Roboto";
+      font-weight: 400;
+      line-height: 32px;
+      margin-top: 33px;
+
+      @media (max-width: $tablet-l) {
+        font-size: 17px;
+        line-height: 28px;
+      }
+      
+      @media (max-width: $tablet) {
+        font-size: 16px;
+        line-height: 25px;
+      }
+      
+      @media (max-width: $mobile) {
+        font-size: 15px;
+        line-height: 21px;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 72px; 
+      }
+    }
+  }
+}
