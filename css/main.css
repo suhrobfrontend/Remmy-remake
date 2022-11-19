@@ -342,7 +342,6 @@ body {
 }
 .hero__img {
   width: 100%;
-  filter: blur(20px);
 }
 
 .treatment {
